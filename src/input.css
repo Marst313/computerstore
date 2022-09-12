@@ -1,0 +1,61 @@
+:root {
+  --warna-tema: 71 181 255;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar fixed */
+.navbar-fixed {
+  @apply fixed z-10 bg-primary/50 backdrop-blur-sm;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 250, 0.1);
+}
+
+/* Hamburger */
+.hamburger-line {
+  @apply my-2 block h-[2px] w-[30px] bg-primaryDark;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-[45deg];
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-[45deg];
+}
+
+.logo-img {
+  @apply h-[30px] w-[30px] cursor-pointer rounded-full bg-center bg-no-repeat shadow-sm transition duration-300 ease-in-out hover:scale-[2];
+}
+/* card */
+.card-item {
+  @apply h-80 w-64  rounded-2xl px-4;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dots_dot {
+  @apply mr-7 h-4 w-4 cursor-pointer rounded-full border-none bg-primary opacity-80 transition-all duration-300;
+}
+
+.dots_dot-2 {
+  @apply mr-7 h-4 w-4 cursor-pointer rounded-full border-none bg-primary opacity-80 transition-all duration-300;
+}
+.dots_dot-3 {
+  @apply mr-7 h-4 w-4 cursor-pointer rounded-full border-none bg-primary opacity-80 transition-all duration-300;
+}
+.dots__dot--active {
+  @apply bg-primaryDark opacity-100;
+}
+
+.img-reviews {
+  @apply mt-4 flex h-40 w-40 items-center justify-center bg-bgPrimary md:mx-4;
+}
+
+.img-reviews-animation {
+  @apply transition duration-500 ease-in-out group-hover:rotate-[360deg] group-hover:scale-150;
+}
